@@ -12,7 +12,7 @@
 
 
 
-// // object 
+// // object  if
 
 
 // let person = {
