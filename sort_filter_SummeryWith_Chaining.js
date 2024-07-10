@@ -47,19 +47,19 @@ console.log(mappedList);
 //lets chain all functions
 
 
-let final = product.sort((a , b) =>{
-    return a.price - b.price // ascending 
-}).sort((a,b) =>{
-    if( a.name < b.name ) return -1 ;
-    if( b.name > a.name ) return 1 ;
+                let final = product.sort((a , b) =>{
+                    return a.price - b.price // ascending 
+                }).sort((a,b) =>{
+                    if( a.name < b.name ) return -1 ;
+                    if( b.name > a.name ) return 1 ;
 
-}).filter((val) =>{
-    return val.price<4000 
-}).map((val) =>{
-    return (val.name + " - $" + val.price)
-})
+                }).filter((val) =>{
+                    return val.price<4000 
+                }).map((val) =>{
+                    return (val.name + " - $" + val.price)
+                })
 
-console.log(final);
+                console.log(final);
 
 
 
